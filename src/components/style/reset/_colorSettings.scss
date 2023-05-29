@@ -1,0 +1,50 @@
+:root{
+  --main-bg: rgb(34, 34, 34, 0.5);
+  --section-bg: rgb(255, 255, 255, 0.8);
+
+  --main-font: #FFFFFF;
+  --main-title: rgb(34, 34, 34);
+  --main-title-light: #FFFFFF;
+  --main-body: rgb(34, 34, 34, 0.8);
+  
+  --header-border: 1.5px solid #FFFFFF;
+
+  --activity-bg: rgb(34, 34, 34);
+
+  // btn settings
+  --red-btn-bg: #DA9E94;
+  --blue-btn-bg: #9CBFD5;
+  --yellow-btn-bg: #F5E18E;
+  --btn-font-light: #FFFFFF;
+  --btn-font-dark: #222222;
+  --grey-btn-bg: #AAAEB2;
+
+  --settings-btn-bg: rgb(255, 255, 255, 0.8);
+  --settings-btn-font: #222222;
+  --settings-btn-bg-checked: #9FC3D9;
+
+  --settings-account-font: rgb(255, 255, 255, 0.5);
+  --settings-account-font-hover: #FFFFFF;
+
+  --list-style: #9CBFD5;
+
+  // scrollbar
+  --scrollbar-thumb: #D9D9D9;
+  --scrollbar-thumb-hover: #FFFFFF;
+
+  // default input (text)
+  --input-border: 1px solid rgb(34, 34, 34, .5);
+  --input-border-focus: 2px solid #F5E18E;
+  --input-bg: #FFFFFF;
+  --input-placeholder: rgb(34, 34, 34, .5);
+  --input-placeholder-disabled: rgb(34, 34, 34);
+  --select-option-font: rgb(34, 34, 34, .8);
+  --option-checked: #F5E18E;
+
+  --checkbox: rgb(34, 34, 34, .5);
+
+  // other section
+  --section-break-line: 2px solid #FFFFFF;
+
+  --popup-bg: #FFFFFF;
+}

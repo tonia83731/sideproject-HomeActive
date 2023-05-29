@@ -1,0 +1,27 @@
+.btn{
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  font-weight: 500;
+  /* shadow*/
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  padding: 0.1em 0.3em;
+}
+
+.red-btn {
+  @include color-btn(var(--red-btn-bg));
+}
+
+.blue-btn {
+  @include color-btn(var(--blue-btn-bg));
+}
+
+.yellow-btn {
+  @include color-btn(var(--yellow-btn-bg));
+}
+
+.grey-btn{
+  color: #AAAEB2;
+  background-color: rgb(34, 34, 34, .5);
+  font-weight: 700;
+}

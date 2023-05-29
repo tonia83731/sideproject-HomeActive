@@ -1,0 +1,92 @@
+
+@import './reset/reset';
+@import './reset/mixin';
+
+@import './reset/colorSettings';
+@import './reset/btnSettings';
+@import './reset/titleSettings';
+
+@import './login/login';
+@import './login/signup';
+
+@import './home/home';
+@import './home/header';
+@import './home/homeTop';
+@import './home/todo';
+@import './home/homeActivityRecord';
+
+@import './settings/otherheader';
+@import './settings/settings';
+
+@import './activity/activity';
+@import './activity/activitypopup';
+@import './activity/activityDone';
+
+@import './popup';
+
+body{
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--main-font);
+}
+
+.main{
+  background-image: url("../assets/surface-GLQHgBMCwbA-unsplash.jpg");
+  width: 100%;
+  min-height: 100vh;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  // position: absolute;
+  // top: 0;
+  // left: 0;
+  
+  
+  .main-bg-container{
+    background-color: var(--main-bg);
+    width: 100%;
+    min-height: 100vh;
+    height: 100%;
+    .main-container {
+      height: 100%;
+      width: 90%;
+      max-width: 800px;
+      margin: auto;
+      padding: 1em 0;
+    }
+  }
+}
+
+
+
+@media screen and (min-width: 650px){
+  body{
+    font-size: 14px;
+  }
+  .main{
+    .main-bg-container{
+      .main-container{
+        .main-body-container{
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          grid-template-rows: 0.1fr 1fr;
+          grid-gap: 1em;
+          grid-template-areas: 
+           'home home'
+           'todo activity';
+          .home-top{
+            grid-area: home;
+          }
+          .todo{
+            grid-area: todo;
+          }
+          .activity-record{
+            grid-area: activity;
+          }
+        }
+      }
+    }
+  }
+}

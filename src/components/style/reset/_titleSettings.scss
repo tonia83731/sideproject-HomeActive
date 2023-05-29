@@ -1,0 +1,20 @@
+.main-title {
+  @include font-adjust(1.5em, 700, var(--main-title));
+}
+
+.title{
+  margin-bottom: 0.3em;
+}
+
+.sub-title{
+  @include font-adjust(1.2em, 700, var(--main-title));
+}
+
+.other-title{
+  @include font-adjust(1.2em, 700, var(--main-title-light));
+  margin-bottom: 0.5em;
+}
+
+.caption-title {
+  @include font-adjust(0.8em, 400, var(--main-title-light));
+}

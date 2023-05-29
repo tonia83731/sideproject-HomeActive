@@ -1,0 +1,21 @@
+
+@mixin svg-adjust($width, $height, $color){
+  svg{
+    width: $width;
+    height: $height;
+    path{
+      fill: $color;
+    }
+  }
+}
+
+@mixin font-adjust($size, $weight, $color){
+  font-size: $size;
+  font-weight: $weight;
+  color: $color;
+}
+
+@mixin color-btn($bg) {
+  color: #222222;
+  background-color: $bg;
+}

@@ -1,0 +1,36 @@
+.activity-record-container{
+  background-color: var(--section-bg);
+  border-radius: 5px;
+  padding: 0.5em 1em;
+  .activity-record-img{
+    background-image: url("../../assets/claudio-schwarz-vj3nOtiX85Y-unsplash.jpg");
+    width: 100%;
+    height: 15vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .activity-record-list{
+    @include font-adjust(1em, 600, var(--main-body));
+    padding: 0.15em 0;
+    .activity-record-title{
+      &:before {
+        content: "•";
+        font-size: 1em;
+        padding-right: 0.5em;
+        color: var(--list-style)
+      }
+    }
+    .activity-record-item{
+      display: flex;
+      justify-content: space-between;
+      padding: 0.15em 0;
+    }
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .activity-record-container{
+    height: 50vh;
+  }
+}

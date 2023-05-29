@@ -1,0 +1,24 @@
+.settings-header{
+  .settings-header-container{
+    display: grid;
+    grid-template-columns: 15% 1fr 15%;
+    grid-gap: 1em;
+    align-items: center;
+    .back-link{
+      grid-column: 1/2;
+      @include font-adjust(1em, 500, var(--btn-font-light));
+    }
+    .settings-header-title{
+      grid-column: 2/3;
+      color: var(--btn-font-light);
+      text-align: center;
+    }
+    .save-btn{
+      grid-column: 3/4;
+      color: var(--btn-font-light);
+      font-weight: 700;
+      height: 20px;
+      line-height: 20px;
+    }
+  }
+}

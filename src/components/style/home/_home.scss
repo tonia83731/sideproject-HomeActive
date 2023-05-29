@@ -1,0 +1,27 @@
+.home-body-container {
+  padding: 2em 0;
+}
+
+@media screen and (min-width: 650px) {
+  .home-body-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 0.1fr 1fr;
+    grid-gap: 1em;
+    grid-template-areas:
+      'home home'
+      'todo activity';
+
+    .home-top {
+      grid-area: home;
+    }
+
+    .todo {
+      grid-area: todo;
+    }
+
+    .activity-record {
+      grid-area: activity;
+    }
+  }
+}

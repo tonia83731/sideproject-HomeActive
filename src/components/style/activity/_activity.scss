@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;600;700&display=swap');
+
+
+.activity-container{
+  min-height: 100vh;
+  width: 100%;
+  height: 100%;
+  background-color: var(--activity-bg);
+  .activity-img{
+    background-image: url("../../../components/assets/dummyActivity.png");
+    width: 100%;
+    height: 50vh;
+    // max-height: 670px;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+
+    position: relative;
+
+    .activity-timer{
+      font-family: 'Roboto Mono', monospace;
+      font-size: 2.5em;
+      font-weight: 600;
+      color: var(--main-title);
+
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+  .activity-body{
+    .activity-body-container{
+      padding: 2em 0 1em;
+      width: 90%;
+      max-width: 800px;
+      margin: 0 auto;
+      .activity-body-title{
+        color: var(--main-title-light);
+      }
+      .activity-body-list{
+        padding: 1em 1em 0.5em;
+        .activity-body-item{
+          list-style-type: disc;
+        }
+      }
+      .activity-body-btn-group{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 1em;
+        width: 90%;
+        margin: 0 auto;
+        padding: 1em 0;
+        .activity-body-btn{
+          width: 100%;
+          height: 20px;
+          color: var(-btn-font-light);
+          .quit-btn{
+            background-color: var(--grey-btn-bg);
+          }
+        }
+      }
+      .alarm{
+        color: var(--red-btn-bg);
+        font-size: 0.8em;
+        svg{
+          width: auto;
+          height: 1.2em;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .activity-container {
+    .activity-img {
+      height: 65vh;
+      background-position: center;
+    }
+
+    .activity-body {
+      .activity-body-container {
+        .activity-body-btn-group {
+          .activity-body-btn {
+            height: 40px;
+          }
+        }
+      }
+    }
+  }
+}

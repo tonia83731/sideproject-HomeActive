@@ -1,23 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+
+import './components/style/main.scss'
+import Main from './components/jsx/Main'
+import Activity from '../src/components/jsx/Activity/Activity'
+import ActivityPopup  from './components/jsx/Activity/ActivityPopup';
+import ActivityDone from './components/jsx/Activity/ActivityDone';
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* <Main/> */}
+      {/* <Activity/> */}
+      {/* <ActivityPopup/> */}
+      <ActivityDone/>
     </div>
   );
 }
